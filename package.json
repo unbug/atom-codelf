@@ -11,7 +11,7 @@
   "activationCommands": {
     "atom-workspace": "codelf:search"
   },
-  "repository": "https://github.com/atom/atom",
+  "repository": "https://github.com/unbug/atom-codelf",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0"
