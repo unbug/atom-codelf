@@ -6,12 +6,18 @@ class MainView extends View
     @div style:style, =>
       @div class:"codelf inline",  =>
         @button "Close", outlet:"close", style:"float:left", class:"btn"
+        @button "▶", outlet:"forward", style:"float:right", class:"btn"
+        @button "◀", outlet:"back", style:"float:right", class:"btn"
       @tag "webview", src:"about:blank", outlet:"webview", class: "native-key-bindings", plugins: 'on', allowfullscreen: 'on', autosize: 'on'
 
   initialize: (text, self) ->
     @self = self
     @close.on "click", =>
       @self.browserHide()
+    @back.on "click", =>
+      @webview[0].goBack()
+    @forward.on "click", =>
+      @webview[0].goForward()
     @setSearchText(text)
 
   setURL: (url) ->
