@@ -17,6 +17,6 @@
     "atom": ">=1.0.0"
   },
   "dependencies": {
-    "atom-space-pen-views": "^2.1.1"
+    "space-pen": "^5.1.2"
   }
 }

@@ -1,4 +1,6 @@
-{View, $} = require "atom-space-pen-views"
+{View, $} = require "space-pen"
+shell = require 'shell'
+
 module.exports =
 class MainView extends View
   @content: () ->
@@ -6,19 +8,25 @@ class MainView extends View
     @div style:style, =>
       @div class:"codelf inline",  =>
         @button "Close", outlet:"close", style:"float:left", class:"btn"
-        @button "▶", outlet:"forward", style:"float:right", class:"btn"
-        @button "◀", outlet:"back", style:"float:right", class:"btn"
-      @tag "webview", src:"about:blank", outlet:"webview", class: "native-key-bindings", plugins: 'on', allowfullscreen: 'on', autosize: 'on'
+        #@button "▶", outlet:"forward", style:"float:right", class:"btn"
+        #@button "◀", outlet:"back", style:"float:right", class:"btn"
+      @tag "webview", src:"about:blank", outlet:"webview", class: "native-key-bindings", plugins: 'on', allowfullscreen: 'on', autosize: 'on', preload:'../clients/openLinkInBrowser.js'
 
   initialize: (text, self) ->
     @self = self
     @close.on "click", =>
       @self.browserHide()
+    ###
     @back.on "click", =>
       @webview[0].goBack()
     @forward.on "click", =>
       @webview[0].goForward()
+    ###
     @setSearchText(text)
+    @webview[0].addEventListener 'new-window', (evt) =>
+      shell.openExternal(evt.url);
+    @webview[0].addEventListener 'console-message', (evt) =>
+      console.log('consolemessage: ', evt)
 
   setURL: (url) ->
     @webview.attr("src", url)
