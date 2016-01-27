@@ -20,7 +20,7 @@ Usage
 Apps && Plugins
 =================
   * [Codelf Chrome App](https://chrome.google.com/webstore/detail/codelf-best-github-stars/jnmjaglhmmcplekpfnblniiammmdpaan)
-  * [Codelf for Sbulime Text](https://github.com/unbug/codelf)
+  * [Codelf for Sublime Text](https://github.com/unbug/codelf)
 
 
 Find me
