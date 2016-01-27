@@ -20,4 +20,7 @@ class MainView extends View
   setSearchText: (text) ->
     url = 'http://unbug.github.io/codelf/'
     url = (url+'#'+text) if text&&text.length
+
+    # http://superuser.com/questions/206229/how-to-make-a-blank-page-in-google-chrome-at-start-up
+    @setURL('chrome://newtab')
     setTimeout (=>@setURL(url)), 100
