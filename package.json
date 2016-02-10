@@ -1,7 +1,7 @@
 {
   "name": "codelf",
   "version": "0.9.11",
-  "description": "Best GitHub stars & repositories organizer.Search over projects from GitHub, Bitbucket, Google Code, Codeplex, Sourceforge, Fedora Project to find real-world usage variable names.",
+  "description": "Best GitHub stars tagger and organizer.Search over projects from GitHub, Bitbucket, Google Code, Codeplex, Sourceforge, Fedora Project to find real-world usage variable names.",
   "keywords": [
     "codelf",
     "github",
