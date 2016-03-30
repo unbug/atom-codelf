@@ -35,4 +35,4 @@ class MainView extends View
 
     # http://superuser.com/questions/206229/how-to-make-a-blank-page-in-google-chrome-at-start-up
     @setURL('chrome://newtab')
-    setTimeout (=>@setURL(url)), 100
+    setTimeout (=>@setURL(url)), 350
