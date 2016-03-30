@@ -4,9 +4,9 @@ shell = require 'shell'
 module.exports =
 class MainView extends View
   @content: () ->
-    style = "height:100%;width:640px"
+    style = "height:96%;width:640px;position: absolute;top: 0;right: 0;z-index: 42;"
     @div style:style, =>
-      @div class:"codelf inline",  =>
+      @div class:"codelf-navbar",  =>
         @button "Close", outlet:"close", style:"float:left", class:"btn"
         @button "▶", outlet:"forward", style:"float:right", class:"btn"
         @button "◀", outlet:"back", style:"float:right", class:"btn"
