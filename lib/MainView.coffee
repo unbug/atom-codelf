@@ -10,7 +10,7 @@ class MainView extends View
         @button "Close", outlet:"close", style:"float:left", class:"btn"
         @button "▶", outlet:"forward", style:"float:right", class:"btn"
         @button "◀", outlet:"back", style:"float:right", class:"btn"
-      @tag "webview", src:"about:blank", outlet:"webview", class: "native-key-bindings", plugins: 'on', allowfullscreen: 'on', autosize: 'on', preload:'../clients/openLinkInBrowser.js'
+      @tag "webview", src:"about:blank", outlet:"webview", class: "native-key-bindings codelf-webview", plugins: 'on', allowfullscreen: 'on', autosize: 'on', preload:'../clients/openLinkInBrowser.js'
 
   initialize: (text, self) ->
     @self = self
