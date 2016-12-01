@@ -9,3 +9,4 @@ test
 *.sublime-workspace
 *.sublime-project
 package_control_channel
+npm-debug.log
