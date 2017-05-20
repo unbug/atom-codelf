@@ -4,8 +4,9 @@ Codelf
 =================
 Best GitHub stars,repositories tagger and organizer.Search over projects from GitHub, Bitbucket, Google Code, Codeplex, Sourceforge, Fedora Project to find real-world usage variable names.
 
-  >There are only two hard things in Computer Science: cache invalidation and naming things.-- Phil Karlton
-  ![twohardtings](http://unbug.github.io/codelf/resources/images/twohardtings.jpg)
+  > There are only two hard things in Computer Science: cache invalidation and naming things.-- Phil Karlton
+  > 
+  > ![twohardtings](http://unbug.github.io/codelf/resources/images/twohardtings.jpg)
 
 
 Usage
@@ -19,6 +20,7 @@ Usage
 
 Apps && Plugins
 =================
+  * [Codelf for VS Code](https://github.com/unbug/codelf/#codelf-for-vs-code)
   * [Codelf Chrome App](https://chrome.google.com/webstore/detail/codelf-best-github-stars/jnmjaglhmmcplekpfnblniiammmdpaan)
   * [Codelf for Sublime Text](https://github.com/unbug/codelf)
 
